@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareSync - Results</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+   
+</head>
+    
+   
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <div class="logo">
+        <span>CareSync</span>
+    </div>
+
+    <div class="nav-right">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="data.html">Data Gathering</a>
+            <a href="results.html" class="active">Results</a>
+            <a href="insights.html">Insights</a>
+        </nav>
+    </div>
+
+</header>
+
+<br>
+<header class="page-header gradient-blue">
+    <h1>Results, Discussion, and Recommendation</h1>
+    <p>Usability Findings, Key Issues and Design Improvements</p>
+</header>
+
+<main class="content-container">
+
+<!-- ================= CONTENT ================= -->
+<!-- EXECUTIVE SUMMARY -->
+
+<div class="container">
+
+<div class="section-label">Summary of the Usability Results</div>
+<h2>Testing Overview</h2>
+<div class="divider"></div>
+
+<p class="section-intro">
+CareSync was tested by 20 BSBIO students from April 19–22, 2026. This usability testing was done to check how effective, easy to use, and user-friendly the prototype is. The main goal was to see if users could understand and use the system without difficulty.
+The survey was done using Google Forms. The respondents performed tasks using the prototype and answered questions about their experience. Their responses helped identify what works well and what needs improvement in the system.
+
+</p>
+<br>
+<div class="stat-grid">
+
+<div class="stat-card" style="--accent: #1a73e8;">
+<div class="icon"><i class="bi bi-check-circle"></i></div>
+<div class="number" >90%</div>
+<div class="label">Task Success Rate</div>
+<div class="sub">18 of 20 participants</div>
+</div>
+
+<div class="stat-card" style="--accent: #1a73e8;">
+<div class="icon"><i class="bi bi-clock"></i></div>
+<div class="number">65%</div>
+<div class="label">Task Time (≤5 mins)</div>
+<div class="sub">13 of 20 participants</div>
+</div>
+
+<div class="stat-card" style="--accent: #1a73e8;">
+<div class="icon"><i class="bi bi-bar-chart"></i></div>
+<div class="number">57.25</div>
+<div class="label">Avg. SUS Score</div>
+<div class="sub">Grade: Marginal (C)</div>
+</div>
+
+<div class="stat-card" style="--accent: #1a73e8;">
+<div class="icon"><i class="bi bi-emoji-smile"></i></div>
+<div class="number">50%</div>
+<div class="label">User Satisfaction</div>
+<div class="sub">10 of 20 participants</div>
+</div>
+
+<div class="stat-card" style="--accent: #1a73e8;">
+<div class="icon"><i class="bi bi-people"></i></div>
+<div class="number">20</div>
+<div class="label">Total Participants</div>
+<div class="sub">BSBIO 3A & 3B</div>
+</div>
+
+</div>
+</section>
+
+<!-- BACKGROUND -->
+<br><br><br><br>
+<h2>Respondent Overview</h2>
+<div class="divider"></div>
+
+<p class="section-intro">
+Understanding the participants provides context for interpreting the results. The respondents were 20 BSBIO students with varying age, gender, year level and section, and different levels of experience with similar systems. They also had different frequencies of use of digital tools and applications, making them suitable evaluators of the prototype in terms of usability and user experience.
+
+</p>
+<br>
+
+        <!-- Row 1: Donut charts -->
+        <div class="demo-charts-row">
+
+            <!-- Gender -->
+            <div class="demo-chart-box">
+                <p class="demo-chart-label">Gender</p>
+                <div class="demo-chart-canvas-wrap">
+                    <canvas id="genderChart" role="img" aria-label="Donut chart showing gender: Female 80%, Male 20%">Female 16 (80%), Male 4 (20%)</canvas>
+                </div>
+                <div class="demo-legend">
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#7F77DD;"></span>Female — 16 (80%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#AFA9EC;"></span>Male — 4 (20%)</span>
+                </div>
+            </div>
+
+            <!-- Age -->
+             <div class="demo-chart-box">
+                <p class="demo-chart-label">Age</p>
+                <div class="demo-chart-canvas-wrap">
+                    <canvas id="ageChart" role="img" aria-label="Donut chart showing age distribution: Age 20 15%, Age 21 65%, Age 22 10%, Age 23 10%">Age 20: 3 (15%), Age 21: 13 (65%), Age 22: 2 (10%), Age 23: 2 (10%)</canvas>
+                </div>
+                <div class="demo-legend">
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#1D9E75;"></span>Age 20 — 3 (15%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#34C8A0;"></span>Age 21 — 13 (65%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#7FE0C8;"></span>Age 22 — 2 (10%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#B8F0E4;"></span>Age 23 — 2 (10%)</span>
+                </div>
+            </div>
+
+            <!-- Course / Year / Section -->
+            <div class="demo-chart-box">
+                <p class="demo-chart-label">Course / Year Level / Section</p>
+                <div class="demo-chart-canvas-wrap">
+                    <canvas id="sectionChart" role="img" aria-label="Donut chart showing section distribution: BSBIO 3A 60%, BSBIO 3B 40%">BSBIO 3A: 12 (60%), BSBIO 3B: 8 (40%)</canvas>
+                </div>
+                <div class="demo-legend">
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#D85A30;"></span>BSBIO 3A — 12 (60%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#F0997B;"></span>BSBIO 3B — 8 (40%)</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Row 2: Bar charts -->
+        <div class="demo-charts-row-2">
+
+            <!-- Prior Experience -->
+            <div class="demo-bar-box">
+                <p class="demo-bar-label">Prior Experience with Similar Systems</p>
+                <div class="demo-bar-wrap">
+                    <canvas id="priorChart" role="img" aria-label="Bar chart showing prior experience: Yes 12 (60%), No 8 (40%)">Yes: 12 (60%), No: 8 (40%)</canvas>
+                </div>
+                <div class="demo-legend">
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#378ADD;"></span>Yes — 12 (60%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#85B7EB;"></span>No — 8 (40%)</span>
+                </div>
+            </div>
+
+            <!-- Technology Usage Frequency -->
+            <div class="demo-bar-box">
+                <p class="demo-bar-label">Technology Usage Frequency</p>
+                <div class="demo-bar-wrap">
+                    <canvas id="techChart" role="img" aria-label="Bar chart showing technology usage frequency: Daily 12 (60%), Often 5 (25%), Sometimes 3 (15%)">Daily: 12 (60%), Often: 5 (25%), Sometimes: 3 (15%)</canvas>
+                </div>
+                <div class="demo-legend">
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#534AB7;"></span>Daily — 15 (6075%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#7F77DD;"></span>Weekly — 4 (20%)</span>
+                    <span class="demo-legend-item"><span class="demo-legend-dot" style="background:#AFA9EC;"></span>Sometimes — 1 (5%)</span>
+                </div>
+            </div>
+  </div>
+        </div>
+    <!-- ================= END DEMOGRAPHIC CHARTS ================= -->
+
+</section>
+
+<!-- ================= PERFORMANCE DATA SECTION ================= -->
+    <div class="container">
+        <h2>Results Overview</h2>
+        <div class="divider"></div>
+
+          <p class="section-intro">
+          The results of the usability testing show how well the participants were able to use the CareSync prototype. The data collected focused on the task completion rate, time on task, perceived ease of use, and SUS score distribution. These results helped measure the effectiveness, usability, and overall user experience of the system.
+
+          </p>
+
+        <!-- Top row: 3 cards -->
+        <div class="perf-top-grid">
+
+            <!-- Task Completion Rate -->
+            <div class="perf-card">
+                <p class="perf-card-title">Task Completion Rate</p>
+                <p class="perf-card-sub">Were you able to complete the task?</p>
+                <div class="perf-canvas-wrap" style="height: 200px;">
+                    <canvas id="completionChart" role="img" aria-label="Donut chart: Completed 18 (90%), Did Not Complete 2 (10%)">Completed (Yes): 18 (90%), Did Not Complete (No): 2 (10%)</canvas>
+                </div>
+                <div class="perf-legend" style="justify-content: center;">
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#1D9E75;"></span>Completed (Yes)</span>
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#E24B4A;"></span>Did Not Complete (No)</span>
+                </div>
+            </div>
+
+            <!-- Time on Task -->
+            <div class="perf-card">
+                <p class="perf-card-title">Time on Task</p>
+                <p class="perf-card-sub">How long did it take?</p>
+                <div class="perf-canvas-wrap" style="height: 200px;">
+                    <canvas id="timeChart" role="img" aria-label="Bar chart of time taken: under 3 min 7, 3-5 min 6, 6-10 min 5, over 10 min 2">Less than 3 min: 7, 3–5 min: 6, 6–10 min: 5, More than 10 min: 2</canvas>
+                </div>
+                <div class="perf-legend" style="justify-content: center;">
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#1D9E75;"></span>&lt; 3 min</span>
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#378ADD;"></span>3–5 min</span>
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#EF9F27;"></span>6–10 min</span>
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#E24B4A;"></span>&gt; 10 min</span>
+                </div>
+            </div>
+
+            <!-- Perceived Ease of Use -->
+            <div class="perf-card">
+                <p class="perf-card-title">Perceived Ease of Use</p>
+                <p class="perf-card-sub">How easy was the task?</p>
+                <div class="perf-canvas-wrap" style="height: 200px;">
+                    <canvas id="easeChart" role="img" aria-label="Bar chart of perceived ease: Very Easy 3, Easy 7, Neutral 9, Difficult 1">Very Easy: 3, Easy: 7, Neutral: 9, Difficult: 1</canvas>
+                </div>
+                <div class="perf-legend" style="justify-content: center;">
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#1D9E75;"></span>Very Easy</span>
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#378ADD;"></span>Easy</span>
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#EF9F27;"></span>Neutral</span>
+                    <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#E24B4A;"></span>Difficult</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SUS Score Distribution - full width -->
+        <div class="perf-full-card">
+            <p class="perf-card-title">SUS Score Distribution</p>
+            <p class="perf-card-sub">Individual SUS scores across 20 participants</p>
+            <div class="perf-canvas-wrap" style="height: 280px;">
+                <canvas id="susDistChart" role="img" aria-label="Bar chart showing individual SUS scores for all 20 participants ranging from 30 to 80">Individual SUS scores for 20 participants</canvas>
+            </div>
+            <div class="perf-legend" style="justify-content: center; margin-top: 14px;">
+                <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#E24B4A;"></span>Poor (&lt; 50)</span>
+                <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#EF9F27;"></span>Marginal (50–69)</span>
+                <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#1D9E75;"></span>Good (70+)</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- ================= END PERFORMANCE DATA ================= -->
+      <div class="container">
+        <p class="section-tag">SUS ANALYSIS</p>
+        <h2 style="margin-bottom: 6px;">System Usability Scale (SUS) — Detailed Results</h2>
+        <p style="text-align:center; color:#888; font-size:13px; margin-bottom:1.5rem;">Average scores per question (1–5 scale) · Overall SUS Score: <strong>57.25 / 100</strong></p>
+
+        <div class="sus-detailed-wrap">
+
+            <!-- Left: gauge + score -->
+            <div class="sus-gauge-side">
+                <canvas id="susGaugeChart" class="sus-gauge-canvas" role="img" aria-label="Gauge chart showing SUS score of 57.25 out of 100, grade Marginal">SUS Score: 57.25 / 100, Grade: Marginal</canvas>
+                <div class="sus-score-big">57.25</div>
+                <div class="sus-score-label">out of 100</div>
+                <div class="sus-grade-badge">Grade: Marginal (C)</div>
+                <div class="sus-benchmark">Average SUS benchmark is ~68</div>
+            </div>
+
+            <!-- Right: item bars -->
+            <div class="sus-items-side">
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q1 – Frequent Use</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:75%"></div></div>
+                    <span class="sus-item-val">3.75</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q2 – Complexity</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:68%"></div></div>
+                    <span class="sus-item-val">3.4</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q3 – Ease of Use</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:78%"></div></div>
+                    <span class="sus-item-val">3.9</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q4 – Technical Support</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:64%; background:#E24B4A;"></div></div>
+                    <span class="sus-item-val">3.2</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q5 – Well integrated</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:77%"></div></div>
+                    <span class="sus-item-val">3.85</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q6 – Consistent</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:68%"></div></div>
+                    <span class="sus-item-val">3.4</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q7 – Learnable</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:83%; background:#1D9E75;"></div></div>
+                    <span class="sus-item-val">4.15</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q8 – Not cumbersome</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:68%"></div></div>
+                    <span class="sus-item-val">3.4</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q9 – Confident</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:81%; background:#1D9E75;"></div></div>
+                    <span class="sus-item-val">4.05</span>
+                </div>
+                <div class="sus-item-row">
+                    <span class="sus-item-name">Q10 – Learning Needed</span>
+                    <div class="sus-item-bar-bg"><div class="sus-item-bar-fill" style="width:68%"></div></div>
+                    <span class="sus-item-val">3.4</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SUS Item Response Comparison bar chart -->
+        <div style="margin-top: 2rem;">
+            <p class="perf-card-title">SUS Item Response Comparison</p>
+            <p class="perf-card-sub">Mean score per SUS item (1–5 scale)</p>
+            <div class="sus-compare-wrap" style="height: 280px;">
+                <canvas id="susCompareChart" role="img" aria-label="Horizontal bar chart comparing mean scores per SUS item">SUS item comparison chart</canvas>
+            </div>
+        </div>
+
+        <!-- Satisfaction Score Breakdown -->
+        <div style="margin-top: 2rem;">
+            <p class="perf-card-title">Satisfaction Score Breakdown (SUS Items)</p>
+            <p class="perf-card-sub">Proportion of positive, neutral, and negative responses per question</p>
+            <div class="sat-wrap" style="height: 260px;">
+                <canvas id="satStackChart" role="img" aria-label="Stacked bar chart showing positive, neutral, and negative response proportions per SUS item">Satisfaction breakdown stacked bar chart</canvas>
+            </div>
+            <div class="perf-legend" style="justify-content:center; margin-top:12px;">
+                <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#1D9E75;"></span>Positive (4–5)</span>
+                <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#EF9F27;"></span>Neutral (3)</span>
+                <span class="perf-legend-item"><span class="perf-legend-dot" style="background:#E24B4A;"></span>Negative (1–2)</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- ================= END SUS DETAILED ================= -->
+    <div class="container">
+    <p class="section-tag">DISCUSSION OF FINDINGS</p>
+        <h2>Key Findings</h2>
+        <p class="section-intro-left" style="margin-bottom:1.5rem;">
+            Analysis of both quantitative metrics and qualitative feedback revealed consistent patterns in user behavior and recurring pain points.
+        </p>
+
+        <p style="font-size:14px; font-weight:700; margin-bottom:0.5rem;">🛠️ Usability Issues Identified</p>
+
+        <div class="kf-issues-grid">
+
+            <div class="kf-issue-card sev-high">
+                <span class="kf-severity-badge badge-high">HIGH SEVERITY</span>
+                <span class="kf-issue-icon">🐢</span>
+                <p class="kf-issue-title">Slow System Response / Lag</p>
+                <p class="kf-issue-desc">Multiple users reported the system was slow to respond when tapping elements, creating frustration and uncertainty about whether actions were registered.</p>
+            </div>
+
+            <div class="kf-issue-card sev-high">
+                <span class="kf-severity-badge badge-high">HIGH SEVERITY</span>
+                <span class="kf-issue-icon">📘</span>
+                <p class="kf-issue-title">Missing Onboarding / Instructions</p>
+                <p class="kf-issue-desc">Users expressed confusion about how to navigate the system. No tutorial or onboarding flow was present, leading to exploratory and error-prone behavior.</p>
+            </div>
+
+            <div class="kf-issue-card sev-medium">
+                <span class="kf-severity-badge badge-medium">MEDIUM SEVERITY</span>
+                <span class="kf-issue-icon">🌐</span>
+                <p class="kf-issue-title">Language Accessibility</p>
+                <p class="kf-issue-desc">A user flagged that not all users are English-proficient. No language preference or translation feature is available, potentially excluding non-student users.</p>
+            </div>
+
+            <div class="kf-issue-card sev-medium">
+                <span class="kf-severity-badge badge-medium">MEDIUM SEVERITY</span>
+                <span class="kf-issue-icon">🔘</span>
+                <p class="kf-issue-title">Button Interaction Issues</p>
+                <p class="kf-issue-desc">Some users noted the click/tap buttons were not intuitive or needed redesign, suggesting affordance and visual feedback improvements are needed.</p>
+            </div>
+
+            <div class="kf-issue-card sev-low">
+                <span class="kf-severity-badge badge-low">LOW SEVERITY</span>
+                <span class="kf-issue-icon">📢</span>
+                <p class="kf-issue-title">Low System Awareness / Visibility</p>
+                <p class="kf-issue-desc">One user suggested promoting the system more widely, indicating low discoverability and lack of user base awareness outside the study group.</p>
+            </div>
+
+            <div class="kf-issue-card sev-low">
+                <span class="kf-severity-badge badge-low">LOW SEVERITY</span>
+                <span class="kf-issue-icon">🎨</span>
+                <p class="kf-issue-title">Visual Design Clarity</p>
+                <p class="kf-issue-desc">A participant mentioned the interface is "a little confusing," pointing to layout or visual hierarchy issues that may impede initial orientation.</p>
+            </div>
+
+        </div>
+
+        <p style="font-size:14px; font-weight:700; margin-bottom:0.5rem;">👍 What Users Liked</p>
+
+        <div class="kf-quotes-grid">
+            <div class="kf-quote-card">
+                <div class="kf-quote-mark">"</div>
+                <p class="kf-quote-text">It was suggesting nearest hospitals or clinic near you — that was the most useful feature.</p>
+                <span class="kf-quote-source">BSBIO 3B Participant</span>
+            </div>
+            <div class="kf-quote-card">
+                <div class="kf-quote-mark">"</div>
+                <p class="kf-quote-text">It was easy to access, and I like the idea that it shows the location of the clinics, how long travel will take, its basic info and price range.</p>
+                <span class="kf-quote-source">BSBIO 3B Participant</span>
+            </div>
+            <div class="kf-quote-card">
+                <div class="kf-quote-mark">"</div>
+                <p class="kf-quote-text">It's very practical, less hassle, and not time consuming. Also easy to access.</p>
+                <span class="kf-quote-source">BSBIO 3A Participant</span>
+            </div>
+            <div class="kf-quote-card">
+                <div class="kf-quote-mark">"</div>
+                <p class="kf-quote-text">It's easy to use and simple to understand. Everything is organized, so it's convenient.</p>
+                <span class="kf-quote-source">BSBIO 3A Participant</span>
+            </div>
+        </div>
+
+    </section>
+    <!-- ================= END KEY FINDINGS ================= -->
+
+
+    <!-- ================= RECOMMENDATIONS ================= -->
+    <section class="card rec-section">
+
+        <p class="section-tag">RECOMMENDATIONS</p>
+        <h2>Design Recommendations</h2>
+        <p class="section-intro-left" style="margin-bottom:1.5rem;">
+            Based on usability issues, SUS scores, and open-ended feedback, the following improvements are recommended to enhance the CareSync prototype experience.
+        </p>
+
+        <div class="rec-list">
+
+            <div class="rec-item">
+                <div class="rec-num">1</div>
+                <div class="rec-body">
+                    <p class="rec-title">Optimize System Performance &amp; Response Time</p>
+                    <p class="rec-desc">Address the lag and slow tap response reported by multiple participants. Implement loading indicators, optimize API calls, and use local caching for clinic data to ensure the system responds within 1–2 seconds of user interaction.</p>
+                    <span class="rec-priority-badge pri-high">HIGH PRIORITY</span>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-num">2</div>
+                <div class="rec-body">
+                    <p class="rec-title">Add an Onboarding / Tutorial Flow</p>
+                    <p class="rec-desc">Introduce a brief onboarding sequence (3–5 screens) that guides first-time users through core features. Include tooltips and contextual hints to reduce initial confusion, particularly for navigating the clinic finder and map features.</p>
+                    <span class="rec-priority-badge pri-high">HIGH PRIORITY</span>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-num">3</div>
+                <div class="rec-body">
+                    <p class="rec-title">Improve Button Affordance &amp; Visual Feedback</p>
+                    <p class="rec-desc">Redesign interactive elements to clearly communicate clickability. Add tap animations, ripple effects, and state changes (hover, active, loading) so users receive immediate visual confirmation of their actions.</p>
+                    <span class="rec-priority-badge pri-high">HIGH PRIORITY</span>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-num">4</div>
+                <div class="rec-body">
+                    <p class="rec-title">Introduce Multi-Language Support</p>
+                    <p class="rec-desc">Add a language preference option (at minimum, Filipino/English toggle) to broaden accessibility beyond student populations. Consider localized labels for medical terms to serve non-academic users effectively.</p>
+                    <span class="rec-priority-badge pri-medium">MEDIUM PRIORITY</span>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-num">5</div>
+                <div class="rec-body">
+                    <p class="rec-title">Simplify Interface Layout &amp; Visual Hierarchy</p>
+                    <p class="rec-desc">Reduce visual clutter on key screens. Apply clearer typography hierarchy, consistent spacing, and logical grouping of related elements to help users orient themselves quickly without external guidance.</p>
+                    <span class="rec-priority-badge pri-medium">MEDIUM PRIORITY</span>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-num">6</div>
+                <div class="rec-body">
+                    <p class="rec-title">Conduct Follow-Up Usability Testing</p>
+                    <p class="rec-desc">After implementing the above improvements, repeat usability testing with the same or similar participant group to measure progress and verify that the SUS score improves beyond the "Marginal" range toward "Good" (≥ 68).</p>
+                    <span class="rec-priority-badge pri-low">LOW PRIORITY</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= END RECOMMENDATIONS ================= -->
+
+<!-- ================= HEURISTIC EVALUATION / PDF ================= -->
+    <section class="card pdf-section">
+
+        <p class="section-tag">APP EVALUATION</p>
+        <h2>Heuristic Evaluation Workbook</h2>
+
+        <p style="text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 14px;">
+            The following PDFs contain our team's heuristic evaluation of the CareSync prototype. Click any file below to open it.
+        </p>
+
+        <div class="pdf-attach-grid">
+
+            <a href="Heuristic Evaluation Workbook/Kumar_Heuristic_Evaluation_Workbook.pdf" class="file-attachment">
+                <svg style="width:20px;height:20px;fill:#666;flex-shrink:0" viewBox="0 0 24 24"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18Z" /></svg>
+                <div class="file-info">
+                    <span class="file-name">Kumar_Heuristic_Evaluation_Workbook.pdf</span>
+                    <span class="file-size">PDF File • 165 KB</span>
+                </div>
+            </a>
+
+            <a href="Heuristic Evaluation Workbook/Opeda_Heuristic_Evaluation_Workbook.pdf" class="file-attachment">
+                <svg style="width:20px;height:20px;fill:#666;flex-shrink:0" viewBox="0 0 24 24"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18Z" /></svg>
+                <div class="file-info">
+                    <span class="file-name">Opeda_Heuristic_Evaluation_Workbook.pdf</span>
+                    <span class="file-size">PDF File • 113 KB</span>
+                </div>
+            </a>
+
+            <a href="Heuristic Evaluation Workbook/Rosamiran_Heuristic_Evaluation_Workbook.pdf" class="file-attachment">
+                <svg style="width:20px;height:20px;fill:#666;flex-shrink:0" viewBox="0 0 24 24"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18Z" /></svg>
+                <div class="file-info">
+                    <span class="file-name">Rosamiran_Heuristic_Evaluation_Workbook.pdf</span>
+                    <span class="file-size">PDF File • 213 KB</span>
+                </div>
+            </a>
+
+            <a href="Heuristic Evaluation Workbook/Sabordo_Heuristic_Evaluation_Workbook.pdf" class="file-attachment">
+                <svg style="width:20px;height:20px;fill:#666;flex-shrink:0" viewBox="0 0 24 24"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18Z" /></svg>
+                <div class="file-info">
+                    <span class="file-name">Sabordo_Heuristic_Evaluation_Workbook.pdf</span>
+                    <span class="file-size">PDF File • 81 KB</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- ================= END PDF SECTION ================= -->
+</main>
+
+<!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <h3>CareSync</h3>
+      <p>
+        A mobile healthcare application prototype designed <br>to simplify clinic workflows, appointment booking,<br> and patient queue management.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h5>PAGES</h5>
+      <a href="index.html">Home</a>
+      <a href="data.html">Data Gathering</a>
+      <a href="results.html">Results</a>
+      <a href="insights.html">Insights</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>COLLEGE</h5>
+      <p>Partido State University</p>
+      <p>College of Engineering and Computational Sciences</p>
+      <p>A.Y. 2025–2026</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 CareSync Team. All rights reserved.</p>
+    <p>Human Computer Interaction 2 — Final Project</p>
+  </div>
+
+</footer>
+<script src="script.js"></script>
+
+<!-- ================= CHART.JS ================= -->
+<script src="script.js"></script>
+
+<!-- ================= CHART.JS ================= -->
+<script src="script.js"></script>
+
+<!-- ================= CHART.JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  const donutOpts = {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '68%',
+    animation: { animateRotate: true, duration: 1000, easing: 'easeOutQuart' },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: function(ctx) {
+            return ' ' + ctx.label + ': ' + ctx.raw + ' (' + Math.round(ctx.raw / 20 * 100) + '%)';
+          }
+        }
+      }
+    }
+  };
+
+  new Chart(document.getElementById('genderChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Female', 'Male'],
+      datasets: [{
+        data: [16, 4],
+        backgroundColor: ['#7F77DD', '#AFA9EC'],
+        borderWidth: 0
+      }]
+    },
+    options: donutOpts
+  });
+
+  new Chart(document.getElementById('ageChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Age 20', 'Age 21', 'Age 22', 'Age 23'],
+      datasets: [{
+        data: [3, 13, 2, 2],
+        backgroundColor: ['#1D9E75', '#34C8A0', '#7FE0C8', '#B8F0E4'],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '68%',
+      animation: { animateRotate: true, duration: 1000, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              return ' ' + ctx.label + ': ' + ctx.raw + ' (' + Math.round(ctx.raw / 20 * 100) + '%)';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('sectionChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['BSBIO 3A', 'BSBIO 3B'],
+      datasets: [{
+        data: [12, 8],
+        backgroundColor: ['#D85A30', '#F0997B'],
+        borderWidth: 0
+      }]
+    },
+    options: donutOpts
+  });
+
+  const barOpts = {
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: { duration: 1000, easing: 'easeOutQuart' },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: function(ctx) {
+            return ' ' + ctx.raw + ' respondents (' + Math.round(ctx.raw / 20 * 100) + '%)';
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: { color: '#888', font: { size: 12 } }
+      },
+      y: {
+        beginAtZero: true,
+        max: 20,
+        ticks: { stepSize: 5, color: '#888', font: { size: 11 } },
+        grid: { color: 'rgba(0,0,0,0.06)' }
+      }
+    }
+  };
+
+  new Chart(document.getElementById('priorChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Yes', 'No'],
+      datasets: [{
+        data: [12, 8],
+        backgroundColor: ['#378ADD', '#85B7EB'],
+        borderWidth: 0,
+        borderRadius: 6
+      }]
+    },
+    options: barOpts
+  });
+
+  new Chart(document.getElementById('techChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Daily', 'Weekly', 'Sometimes'],
+      datasets: [{
+        data: [15, 4, 1],
+        backgroundColor: ['#534AB7', '#7F77DD', '#AFA9EC'],
+        borderWidth: 0,
+        borderRadius: 6
+      }]
+    },
+    options: {
+      ...barOpts,
+      scales: {
+        ...barOpts.scales,
+        y: { ...barOpts.scales.y, max: 20 }
+      }
+    }
+  });
+
+  /* ---- Performance Data Charts ---- */
+
+  /* Task Completion Rate - donut */
+  new Chart(document.getElementById('completionChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Completed (Yes)', 'Did Not Complete (No)'],
+      datasets: [{
+        data: [18, 2],
+        backgroundColor: ['#1D9E75', '#E24B4A'],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '68%',
+      animation: { animateRotate: true, duration: 1000, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              return ' ' + ctx.label + ': ' + ctx.raw + ' (' + Math.round(ctx.raw / 20 * 100) + '%)';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  /* Time on Task - bar */
+  new Chart(document.getElementById('timeChart'), {
+    type: 'bar',
+    data: {
+      labels: ['< 3 min', '3–5 min', '6–10 min', '> 10 min'],
+      datasets: [{
+        data: [7, 6, 5, 2],
+        backgroundColor: ['#1D9E75', '#378ADD', '#EF9F27', '#E24B4A'],
+        borderWidth: 0,
+        borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 1000, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ' ' + ctx.raw + ' participants' } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: '#888', font: { size: 11 } } },
+        y: { beginAtZero: true, max: 10, ticks: { stepSize: 2, color: '#888', font: { size: 11 } }, grid: { color: 'rgba(0,0,0,0.06)' } }
+      }
+    }
+  });
+
+  /* Perceived Ease of Use - bar */
+  new Chart(document.getElementById('easeChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Very Easy', 'Easy', 'Neutral', 'Difficult'],
+      datasets: [{
+        data: [3, 7, 9, 1],
+        backgroundColor: ['#1D9E75', '#378ADD', '#EF9F27', '#E24B4A'],
+        borderWidth: 0,
+        borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 1000, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ' ' + ctx.raw + ' participants' } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: '#888', font: { size: 11 } } },
+        y: { beginAtZero: true, max: 12, ticks: { stepSize: 2, color: '#888', font: { size: 11 } }, grid: { color: 'rgba(0,0,0,0.06)' } }
+      }
+    }
+  });
+
+  /* SUS Score Distribution - full width bar */
+  const susScores = [35, 40, 42, 45, 47, 50, 52, 55, 57, 57, 60, 60, 62, 65, 65, 67, 70, 72, 75, 80];
+  const susColors = susScores.map(s => s < 50 ? '#E24B4A' : s < 70 ? '#EF9F27' : '#1D9E75');
+  new Chart(document.getElementById('susDistChart'), {
+    type: 'bar',
+    data: {
+      labels: susScores.map((_, i) => 'P' + (i + 1)),
+      datasets: [{
+        data: susScores,
+        backgroundColor: susColors,
+        borderWidth: 0,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 1100, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ' SUS Score: ' + ctx.raw } }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { color: '#aaa', font: { size: 10 }, autoSkip: false, maxRotation: 0 }
+        },
+        y: {
+          beginAtZero: false,
+          min: 25,
+          max: 90,
+          ticks: { stepSize: 10, color: '#888', font: { size: 11 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        }
+      }
+    }
+  });
+
+  /* ---- SUS Gauge (doughnut half) ---- */
+  new Chart(document.getElementById('susGaugeChart'), {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [57.25, 42.75],
+        backgroundColor: ['#378ADD', '#f0f0f0'],
+        borderWidth: 0,
+        circumference: 180,
+        rotation: 270
+      }]
+    },
+    options: {
+      responsive: false,
+      cutout: '72%',
+      animation: { animateRotate: true, duration: 1200, easing: 'easeOutQuart' },
+      plugins: { legend: { display: false }, tooltip: { enabled: false } }
+    }
+  });
+
+  /* ---- SUS Item Comparison (horizontal bar) ---- */
+  new Chart(document.getElementById('susCompareChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Frequent Use','Not Complex','Easy','No Tech Support','Integrated','Consistent','Learnable','Not Cumbersome','Confident','Low Learning'],
+      datasets: [
+        {
+          label: 'Score',
+          data: [3.75, 3.4, 3.9, 3.2, 3.85, 3.4, 4.15, 3.4, 4.05, 3.4],
+          backgroundColor: [
+            '#378ADD','#378ADD','#378ADD','#E24B4A',
+            '#378ADD','#378ADD','#1D9E75','#378ADD','#1D9E75','#378ADD'
+          ],
+          borderWidth: 0,
+          borderRadius: 4
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 1000, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ' Mean: ' + ctx.raw } }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          max: 5,
+          ticks: { stepSize: 1, color: '#888', font: { size: 11 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: '#555', font: { size: 11 } }
+        }
+      }
+    }
+  });
+
+  /* ---- Satisfaction Score Breakdown (stacked bar) ---- */
+  const susLabels = ['Frequent Use','Not Complex','Easy','No Tech Support','Integrated','Consistent','Learnable','Not Cumbersome','Confident','Low Learning'];
+  const posData  = [10, 8, 12, 6, 10, 8, 14, 8, 12, 8];
+  const neutData = [6,  6,  5,  7,  7,  7,  4,  7,  5,  7];
+  const negData  = [4,  6,  3,  7,  3,  5,  2,  5,  3,  5];
+  new Chart(document.getElementById('satStackChart'), {
+    type: 'bar',
+    data: {
+      labels: susLabels,
+      datasets: [
+        { label: 'Positive (4–5)', data: posData,  backgroundColor: '#1D9E75', borderWidth: 0, borderRadius: 0 },
+        { label: 'Neutral (3)',    data: neutData, backgroundColor: '#EF9F27', borderWidth: 0, borderRadius: 0 },
+        { label: 'Negative (1–2)',data: negData,  backgroundColor: '#E24B4A', borderWidth: 0, borderRadius: 0 }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 1000, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: { mode: 'index', intersect: false }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          grid: { display: false },
+          ticks: { color: '#888', font: { size: 10 }, autoSkip: false, maxRotation: 30 }
+        },
+        y: {
+          stacked: true,
+          beginAtZero: true,
+          max: 20,
+          ticks: { stepSize: 2, color: '#888', font: { size: 11 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
